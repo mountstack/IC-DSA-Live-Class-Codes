@@ -7,7 +7,7 @@ class HashTable {
     } 
 
     hash(num) { 
-        num = num + '';
+        num = num + ''; 
 
         let code = 0; 
         for(let i = 0; i < num.length; i++) {
@@ -24,6 +24,7 @@ class HashTable {
 
         if(!arr) return num +' Not Found';
 
+        // Linear Search 
         for(let i = 0; i < arr.length; i++) { 
             if(arr[i] === num) { 
                 return num + ' Found'; 
